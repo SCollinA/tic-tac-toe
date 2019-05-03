@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ticTacToe": {
+    "tic-tac-toe": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ticTacToe",
+            "outputPath": "dist/tic-tac-toe",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,30 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "ticTacToe:build"
           },
           "configurations": {
             "production": {
               "browserTarget": "ticTacToe:build:production"
+=======
+            "browserTarget": "tic-tac-toe:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "tic-tac-toe:build:production"
+>>>>>>> 4ab082d83352e0598fb1d890f0e75a93fb8d35c8
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "ticTacToe:build"
+=======
+            "browserTarget": "tic-tac-toe:build"
+>>>>>>> 4ab082d83352e0598fb1d890f0e75a93fb8d35c8
           }
         },
         "test": {
@@ -103,7 +115,11 @@
         }
       }
     },
+<<<<<<< HEAD
     "ticTacToe-e2e": {
+=======
+    "tic-tac-toe-e2e": {
+>>>>>>> 4ab082d83352e0598fb1d890f0e75a93fb8d35c8
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +128,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
+<<<<<<< HEAD
             "devServerTarget": "ticTacToe:serve"
           },
           "configurations": {
             "production": {
               "devServerTarget": "ticTacToe:serve:production"
+=======
+            "devServerTarget": "tic-tac-toe:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "tic-tac-toe:serve:production"
+>>>>>>> 4ab082d83352e0598fb1d890f0e75a93fb8d35c8
             }
           }
         },
@@ -132,5 +156,9 @@
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "ticTacToe"
+=======
+  "defaultProject": "tic-tac-toe"
+>>>>>>> 4ab082d83352e0598fb1d890f0e75a93fb8d35c8
 }
