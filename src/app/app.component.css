@@ -2,21 +2,13 @@ h1 {
   display: flex;
   justify-content: center;
 }
+app-row {
+  flex: 1;
+  display: flex;
+}
 
 .board {
   height: 50em;
   display: flex;
   flex-direction: column;
-}
-
-.row {
-  height: 50px;
-  flex: 1;
-  display: flex;
-}
-
-.square {
-  flex: 1;
-  border-color: transparent;
-  border: solid 5px black;
 }
