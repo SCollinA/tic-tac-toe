@@ -9,14 +9,6 @@ h1 {
   flex-direction: column;
 }
 
-.row {
-  height: 50px;
+app-row {
   flex: 1;
-  display: flex;
-}
-
-.square {
-  flex: 1;
-  border-color: transparent;
-  border: solid 5px black;
 }
