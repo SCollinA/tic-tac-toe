@@ -1,3 +1,5 @@
-<app-square></app-square>
-<app-square></app-square>
-<app-square></app-square>
+<app-square 
+    *ngFor='let square of row'
+    [isXTurn]='isXTurn'
+    [square]='square'
+></app-square>
