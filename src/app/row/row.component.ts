@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-row',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RowComponent implements OnInit {
 
+  @Input() row: string[]
+  @Input() isXTurn: boolean
+  @Input() endTurn: Function
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }

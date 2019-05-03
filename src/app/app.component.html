@@ -1,7 +1,9 @@
 <h1>{{ title }}</h1>
 
-<div class="board">
-  <app-row></app-row>
-  <app-row></app-row>
-  <app-row></app-row>
+<div class="board"> 
+  <app-row 
+    *ngFor='let row of board' 
+    [row]='row'
+    [isXTurn]='isXTurn'
+  ></app-row>
 </div>
