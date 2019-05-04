@@ -9,19 +9,20 @@ export class BoardService {
   isXTurn = true;
 
   board = [
-    ['', '', ''],
-    ['', '', ''],
-    ['', '', '']
+    [new Square(), new Square(), new Square()],
+    [new Square(), new Square(), new Square()],
+    [new Square(), new Square(), new Square()],
   ];
 
   constructor() { }
 
-  onSelect(square: Square) {
+  onSelect(loc: number[]) {
     console.log(
       'does it work',
       this.isXTurn,
       this.board
     );
+    const square = this.board[loc[0]][loc[1]];
     if (!square.val) {
       if (this.isXTurn) {
         square.val = 'x';

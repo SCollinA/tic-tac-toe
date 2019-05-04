@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { BoardService } from './board.service';
+import { Square } from './square';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { BoardService } from './board.service';
 })
 export class AppComponent implements OnInit {
   title = 'tic-tac-toe';
-  board: string[][];
+  board: Square[][];
 
   constructor(private boardService: BoardService) { }
 
