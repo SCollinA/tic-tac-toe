@@ -1,4 +1,4 @@
 <app-square 
     *ngFor='let square of row; let j = index'
-    [square]=''
+    [square]='{ val: "", loc: [i, j]}'
 ></app-square>

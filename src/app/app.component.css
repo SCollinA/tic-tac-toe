@@ -2,13 +2,14 @@ h1 {
   display: flex;
   justify-content: center;
 }
+.board {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 app-row {
   flex: 1;
   display: flex;
 }
 
-.board {
-  height: 50em;
-  display: flex;
-  flex-direction: column;
-}

@@ -7,13 +7,13 @@ import { BoardService } from './board.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'tic-tac-toe';
-  rowCount: number;
+  board: string[][];
 
   constructor(private boardService: BoardService) { }
 
-  onInit() {
-    this.rowCount = this.boardService.board.length;
+  ngOnInit() {
+    this.board = this.boardService.board;
   }
 }

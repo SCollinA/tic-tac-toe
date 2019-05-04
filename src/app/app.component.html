@@ -1,6 +1,5 @@
 <h1>{{ title }}</h1>
-
-<div class="board"> 
+<div *ngIf='board' class="board">
   <app-row 
     *ngFor='let row of board; let i = index;' 
     [row]='row'
