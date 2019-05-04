@@ -10,7 +10,7 @@ import { Square } from '../square';
 })
 export class SquareComponent implements OnInit {
 
-  @Input() square: Square;
+  @Input() loc: number[];
 
   constructor(private boardService: BoardService) { }
 
