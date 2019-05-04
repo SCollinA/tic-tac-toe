@@ -8,8 +8,6 @@ import { Component, OnInit, Input } from '@angular/core';
 export class RowComponent implements OnInit {
 
   @Input() row: string[]
-  @Input() isXTurn: boolean
-  @Input() endTurn: Function
 
   constructor() { }
 

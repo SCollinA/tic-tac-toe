@@ -7,11 +7,4 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   title = "tic-tac-toe";
-  isXTurn = true;
-
-  board = [
-    ['', '', ''],
-    ['', '', ''],
-    ['', '', '']
-  ]
 }
