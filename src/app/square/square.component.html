@@ -1,3 +1,2 @@
-<div (click)='onSelect()'>
-    <p>{{ square }}</p>
-</div>
+<button class='select'
+    (click)='boardService.onSelect(this)'>{{ this.val }}</button>
