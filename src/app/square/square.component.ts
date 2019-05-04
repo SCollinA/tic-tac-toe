@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+import { Square } from '../square'
+
 @Component({
   selector: 'app-square',
   templateUrl: './square.component.html',
