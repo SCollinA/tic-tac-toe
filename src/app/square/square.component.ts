@@ -10,10 +10,12 @@ import { Square } from '../square';
 })
 export class SquareComponent implements OnInit {
 
-  @Input() square: Square;
+  @Input() loc: number[];
+  square: Square;
 
   constructor(private boardService: BoardService) { }
 
   ngOnInit() {
+    this.square = this.boardService.board[this.loc[0]][this.loc[1]];
   }
 }
