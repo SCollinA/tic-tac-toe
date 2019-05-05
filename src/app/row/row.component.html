@@ -1,5 +1,4 @@
 <app-square 
-    *ngFor='let square of row'
-    [isXTurn]='isXTurn'
-    [square]='square'
+    *ngFor='let square of row; let j = index'
+    [loc]='[i, j]'
 ></app-square>
